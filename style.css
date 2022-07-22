@@ -10,7 +10,7 @@ body {
 header {
     background-image: url('images/header.jpg');
     background-size: cover;
-    height: calc(100vh - 30px);
+    height: 100vh;
     position: relative;
     z-index: 1;
     border-bottom:  8px solid #222;
@@ -124,17 +124,72 @@ header::after {
     border-bottom-left-radius: 0px;
 
 }
-.tv-section {
+.section {
     display: flex;
     background-color: black;
     border-bottom: 8px solid #222;
     justify-content: center;
     align-items: center;
-    padding: 0 50px;
+    padding:50px;
     gap: 20px;
     
 }
-.tv-text {
+.text-in {
     color: white;
     max-width: 40%;
+}
+.tv-gif {
+    position: relative;
+}
+.tv-gif img {
+    z-index: 3;
+    position: relative;
+}
+
+.tv-gif video {
+    position: absolute;
+    left: 13%;
+    top: 21%;
+    width: 73%;
+    z-index: 0;
+}
+.download-img {
+    width: 50%;
+    position: relative;
+}
+.download-img img {
+    width: 500px;
+}
+.stranger-img {
+    position: absolute;
+    width: 350px;
+    border: 2px solid white;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    top: 61%;
+    left: 100px;
+    background-color: black;
+    border-radius: 5px;
+}
+.stranger-img img {
+    width: 20%;
+}
+.stranger-img p {
+    color: white;
+    max-width: 25%;
+}
+.stranger-img p span {
+    color: #0071eb;
+}
+.stranger-img p::after {
+    content: "";
+    width: 25px;
+    background-color: blue;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    left: 300px;
+    top: 60px;
 }

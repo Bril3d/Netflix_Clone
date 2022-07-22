@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin:0;
+    font-family: 'Roboto',sans-serif;
+}
+header {
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    height: calc(100vh - 30px);
+    position: relative;
+    z-index: 1;
+    border-bottom:  8px solid #222;
+}
+header::after {
+    content: "";
+    position: absolute;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.4959733893557423) 0%, rgba(0,0,0,1) 100%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+.netflix-logo {
+    fill:#e50914;
+    width: 150px;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+    padding: 25px 50px;
+}
+.r-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    width: 220px;
+}
+.lang {
+    padding: 10px 20px 10px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.r-nav span {
+    position: relative;
+    margin: 0 4px;
+}
+.r-nav span::after {
+    content:"";
+    position:absolute;
+    border-style: solid;
+    border-width: 7px;
+    border-color: white transparent transparent;
+    top: 6px;
+    right: -18px;
+
+}
+.r-nav .sign {
+    padding: 10px 20px 10px 10px;
+    background-color: #e50914;
+    border-radius: 10px;
+}
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    height: calc(100vh - 250px);
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 1.5;
+}
+.header-content h1 {
+    font-size:3.6rem;
+    max-width:640px;
+}
+.header-content h2 {
+    font-size: 1.625rem;
+    max-width:460px;
+    font-weight: normal;
+}
+.header-content h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.header-content form input {
+    min-width: 650px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.header-content form input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color:#8c8c8c;
+}
+.header-content form input:focus {
+    outline: none;
+}
+.header-content form button {
+    padding: 13px;
+    font-size: 1.625rem;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    height: 62px;
+    position: relative;
+    top: 5px;
+    right: 10px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+.tv-section {
+    display: flex;
+    background-color: black;
+    border-bottom: 8px solid #222;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    gap: 20px;
+    
+}
+.tv-text {
+    color: white;
+    max-width: 40%;
+}

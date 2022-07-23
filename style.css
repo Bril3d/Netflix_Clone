@@ -134,19 +134,20 @@ header::after {
     gap: 20px;
     
 }
+
 .text-in {
     color: white;
     max-width: 40%;
 }
-.tv-gif {
+.video-devices {
     position: relative;
 }
-.tv-gif img {
+.video-devices img {
     z-index: 3;
     position: relative;
 }
 
-.tv-gif video {
+.video-devices video {
     position: absolute;
     left: 13%;
     top: 21%;
@@ -154,7 +155,6 @@ header::after {
     z-index: 0;
 }
 .download-img {
-    width: 50%;
     position: relative;
 }
 .download-img img {
@@ -162,7 +162,7 @@ header::after {
 }
 .stranger-img {
     position: absolute;
-    width: 350px;
+    width: 70%;
     border: 2px solid white;
     display: flex;
     padding: 20px;
@@ -173,9 +173,7 @@ header::after {
     background-color: black;
     border-radius: 5px;
 }
-.stranger-img img {
-    width: 20%;
-}
+
 .stranger-img p {
     color: white;
     max-width: 25%;
@@ -190,6 +188,28 @@ header::after {
     height: 25px;
     position: absolute;
     border-radius: 50%;
-    left: 300px;
-    top: 60px;
+    left: 85%;
+    top: 50%;
+}
+.video-devices .watch-vid {
+    position: absolute;
+    left: 19%;
+    top: 13%;
+    width: 61%;
+    z-index: 0;
+}
+.section img {
+    width: 100%;
+}
+.stranger-img img {
+    width: 20%;
+}
+@media (max-width:768px) {
+    .section {
+        flex-direction: column;
+    }
+    .header-content form input {
+        min-width: 400px;
+        margin-bottom: 20px;
+    }
 }

@@ -140,7 +140,13 @@ header::after {
 
 .text-in {
     color: white;
-    max-width: 40%;
+}
+.text-in  h1 {
+    color: white;
+    font-size: 2.5em;
+}
+.text-in h3 {
+    font-size: 1.5em;
 }
 .video-devices {
     position: relative;
@@ -172,14 +178,14 @@ header::after {
     gap: 20px;
     align-items: center;
     top: 61%;
-    left: 100px;
+    left: 20%;
     background-color: black;
     border-radius: 5px;
 }
 
 .stranger-img p {
     color: white;
-    max-width: 25%;
+    max-width: 40%;
 }
 .stranger-img p span {
     color: #0071eb;
@@ -210,11 +216,17 @@ header::after {
 @media (max-width:768px) {
     .section {
         flex-direction: column;
+        max-width: 768px;
+        gap: 75px;
+    }
+    .header {
+        max-width: 720px;
     }
     .header-content form input {
         min-width: 400px;
         margin-bottom: 20px;
     }
+
 }
 .FAQ {
     display: flex;
@@ -239,7 +251,7 @@ header::after {
     right: 35px;
 }
 .FAQ form input {
-    min-width: 650px;
+    min-width: calc(650px - 50px);
     height: 60px;
     padding: 10px;
     border-radius: 5px;
@@ -316,5 +328,69 @@ header::after {
     border-color: #737373 transparent transparent;
     top: 22px;
     right: 12px;
+
+}
+@media (max-width: 575.98px) { 
+    .header-content h3 {
+        font-size: 1em;
+    }
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    .header-content h2 {
+        font-size: 1.2rem;
+    }
+    .header-content form input {
+        min-width: 100%;
+    }
+    .header-content form button {
+        border-radius: 0px;
+        font-size: 1em;
+    }
+    .r-nav {
+        font-size: 0.7em;
+    }
+    .header-nav {
+        padding: 10px;
+    }
+    .stranger-img {
+        width: fit-content;
+        padding: 0;
+    }
+    .stranger-img p {
+        font-size: 0.7em;
+    }
+    .stranger-img p::after {
+        display: none;
+    }
+        .FAQ {
+            width: 100%;
+        }
+        .FAQ ul li {
+            font-size: 1em;
+        }
+        .FAQ ul li::after {
+            display: none;
+        }
+        .FAQ form input {
+            min-width: 100%;
+        }
+        .FAQ form button {
+            border-radius: 0px;
+            font-size: 1em;
+        }
+        .section:last-of-type {
+        font-size:0.9em
+        }
+        .section footer {
+            flex-wrap: wrap;
+        }
+        .section footer ul:nth-of-type(1),.section footer ul:nth-of-type(2) {
+
+            margin-bottom: 20px;
+        }
+        .section footer ul {
+            flex-basis: 50%;
+        }
 
 }
